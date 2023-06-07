@@ -1,28 +1,23 @@
-﻿Imports Microsoft.VisualBasic
 Imports System.Reflection
-Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices
 
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("pdf-signature-sample")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyConfiguration("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("pdf-signature-sample")>
-<Assembly: AssemblyCopyright("Copyright ©  2012")>
-<Assembly: AssemblyTrademark("")>
-<Assembly: AssemblyCulture("")>
-
+<Assembly:AssemblyTitle("pdf-signature-sample")>
+<Assembly:AssemblyDescription("")>
+<Assembly:AssemblyConfiguration("")>
+<Assembly:AssemblyCompany("")>
+<Assembly:AssemblyProduct("pdf-signature-sample")>
+<Assembly:AssemblyCopyright("Copyright ©  2012")>
+<Assembly:AssemblyTrademark("")>
+<Assembly:AssemblyCulture("")>
 ' Setting ComVisible to false makes the types in this assembly not visible 
 ' to COM components.  If you need to access a type in this assembly from 
 ' COM, set the ComVisible attribute to true on that type.
-<Assembly: ComVisible(False)>
-
+<Assembly:ComVisible(False)>
 ' The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("0df35a08-754b-4ed3-b3fa-076ff2dc9e2f")>
-
+<Assembly:Guid("0df35a08-754b-4ed3-b3fa-076ff2dc9e2f")>
 ' Version information for an assembly consists of the following four values:
 '
 '      Major Version
@@ -33,5 +28,5 @@ Imports System.Runtime.InteropServices
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 ' [assembly: AssemblyVersion("1.0.*")]
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly:AssemblyVersion("1.0.0.0")>
+<Assembly:AssemblyFileVersion("1.0.0.0")>
