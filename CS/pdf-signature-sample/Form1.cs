@@ -44,6 +44,7 @@ namespace pdf_signature_sample {
             // Export the report to a PDF file
             // created in the same folder where the application's .exe file is located.
             report.ExportToPdf("test.pdf");
+            System.Diagnostics.Process.Start("test.pdf");
         }
         #endregion #export
 

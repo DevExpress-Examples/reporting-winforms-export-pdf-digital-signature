@@ -28,8 +28,8 @@ Namespace pdf_signature_sample
 			Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
 			Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
 			Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
-			Me.nwindDataSet1 = New pdf_signature_sample.App_data.nwindDataSet()
-			Me.productsTableAdapter = New pdf_signature_sample.App_data.nwindDataSetTableAdapters.ProductsTableAdapter()
+			Me.nwindDataSet1 = New nwindDataSet()
+			Me.productsTableAdapter = New nwindDataSetTableAdapters.ProductsTableAdapter()
 			Me.xrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
 			CType(Me.nwindDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +80,7 @@ Namespace pdf_signature_sample
 			Me.DataAdapter = Me.productsTableAdapter
 			Me.DataMember = "Products"
 			Me.DataSource = Me.nwindDataSet1
-			Me.Margins = New System.Drawing.Printing.Margins(100, 100, 49, 48)
+			Me.Margins = New DevExpress.Drawing.DXMargins(100, 100, 49, 48)
 			Me.Version = "12.2"
 			CType(Me.nwindDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
 			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
@@ -93,7 +93,7 @@ Namespace pdf_signature_sample
 		Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
 		Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
 		Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
-		Private nwindDataSet1 As App_data.nwindDataSet
-		Private productsTableAdapter As App_data.nwindDataSetTableAdapters.ProductsTableAdapter
+		Private nwindDataSet1 As nwindDataSet
+		Private productsTableAdapter As nwindDataSetTableAdapters.ProductsTableAdapter
 	End Class
 End Namespace

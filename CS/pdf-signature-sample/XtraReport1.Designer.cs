@@ -83,7 +83,7 @@
             this.DataAdapter = this.productsTableAdapter;
             this.DataMember = "Products";
             this.DataSource = this.nwindDataSet1;
-            this.Margins = new System.Drawing.Printing.Margins(100, 100, 49, 48);
+            this.Margins = new DevExpress.Drawing.DXMargins(100, 100, 49, 48);
             this.Version = "12.2";
             ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
