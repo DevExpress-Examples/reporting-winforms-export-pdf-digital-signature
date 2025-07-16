@@ -14,9 +14,7 @@ report.ExportOptions.Pdf.SignatureOptions.Reason = "Approved";
 report.ExportOptions.Pdf.SignatureOptions.Location = "USA";
 // svgImageCollection stores SVG images.
 // In this example, it was created and populated at design time.
-report.ExportOptions.Pdf.SignatureOptions.ImageSource = new ImageSource(
-    svgImageCollection1["approved"]
-    );
+report.ExportOptions.Pdf.SignatureOptions.ImageSource = new ImageSource(svgImageCollection1["approved"]);
 report.ExportOptions.Pdf.SignatureOptions.Certificate = certificate;
 ```
 
