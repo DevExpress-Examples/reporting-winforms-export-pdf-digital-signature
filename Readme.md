@@ -6,7 +6,7 @@
 <!-- default badges end -->
 # WinForms Reports - Apply a Digital Signature When Exporting a Report to PDF
 
-This example creates a report and applies a digital signature when the report is exported to PDF. The [XtraReport.ExportOptions.Pdf.SignatureOptions](http://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.PdfExportOptions.SignatureOptions) property is used to specify digital signature options.
+This example creates a report and applies a digital signature when the report is exported to PDF. The [XtraReport.ExportOptions.Pdf.SignatureOptions](http://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.PdfExportOptions.SignatureOptions) property is used to access and configure digital signature options.
 
 ```csharp
 // Specify PDF signature options.
