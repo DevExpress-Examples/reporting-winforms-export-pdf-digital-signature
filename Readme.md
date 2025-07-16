@@ -4,12 +4,23 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# Reporting for WinForms - Apply a Digital Signature When Exporting a Report to PDF
+# WinForms Reports - Apply a Digital Signature When Exporting a Report to PDF
 
+This example creates a report and applies a digital signature when the report is exported to PDF. The [XtraReport.ExportOptions.Pdf.SignatureOptions](http://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.PdfExportOptions.SignatureOptions) property is used to specify digital signature options.
 
-This example shows how to apply a digital signature when a report is exported to PDF using the [XtraReport.ExportOptions.Pdf.SignatureOptions](http://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.PdfExportOptions.SignatureOptions) property.
+```csharp
+// Specify PDF signature options.
+report.ExportOptions.Pdf.SignatureOptions.Reason = "Approved";
+report.ExportOptions.Pdf.SignatureOptions.Location = "USA";
+// svgImageCollection stores SVG images.
+// In this example, it was created and populated at design time.
+report.ExportOptions.Pdf.SignatureOptions.ImageSource = new ImageSource(
+    svgImageCollection1["approved"]
+    );
+report.ExportOptions.Pdf.SignatureOptions.Certificate = certificate;
+```
 
-The code uses the [X509Store](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.x509store) class as a  local storage for digital certificates.
+The example uses the [X509Store](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.x509store) class as a  local storage for digital certificates.
 
 ## Files to Review
 
@@ -17,8 +28,8 @@ The code uses the [X509Store](https://learn.microsoft.com/en-us/dotnet/api/syste
 
 ## Documentation
 
-- [SignatureOptions Class](http://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.PdfExportOptions.SignatureOptions)
-- [Create a Report with a Visual PDF Signature](http://docs.devexpress.com/XtraReports/402208/create-reports/create-a-report-with-visual-pdf-signature) 
+- [Create a Report with a Visual PDF Signature](http://docs.devexpress.com/XtraReports/402208/create-reports/create-a-report-with-visual-pdf-signature)
+- [SignatureOptions Class](http://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.PdfExportOptions.SignatureOptions) 
 - [XRPdfSignature Class](http://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRPdfSignature)
 
 ## More Examples

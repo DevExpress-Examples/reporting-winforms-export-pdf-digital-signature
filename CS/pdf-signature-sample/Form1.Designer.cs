@@ -23,7 +23,10 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
+            this.svgImageCollection1 = new DevExpress.Utils.SvgImageCollection(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.svgImageCollection1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -36,6 +39,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // svgImageCollection1
+            // 
+            this.svgImageCollection1.Add("approved", "image://svgimages/icon builder/security_security.svg");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -44,6 +51,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.svgImageCollection1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -51,6 +59,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private DevExpress.Utils.SvgImageCollection svgImageCollection1;
     }
 }
 
