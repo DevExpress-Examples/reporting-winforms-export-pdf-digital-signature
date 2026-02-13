@@ -34,7 +34,7 @@ The example uses the [X509Store](https://learn.microsoft.com/en-us/dotnet/api/sy
 
 - [Reporting for ASP.NET Core - Use the Web Document Viewer to Sign an Exported PDF Document](https://github.com/DevExpress-Examples/reporting-asp-net-core-sign-pdf-on-export)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-export-pdf-digital-signature&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-export-pdf-digital-signature&~~~was_helpful=no)
 
