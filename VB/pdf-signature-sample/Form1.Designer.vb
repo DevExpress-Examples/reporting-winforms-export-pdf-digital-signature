@@ -25,27 +25,34 @@ Namespace pdf_signature_sample
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
+			Me.components = New System.ComponentModel.Container()
 			Me.button1 = New System.Windows.Forms.Button()
+			Me.svgImageCollection1 = New DevExpress.Utils.SvgImageCollection(Me.components)
+			CType(Me.svgImageCollection1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
-			' 
+			'
 			' button1
-			' 
+			'
 			Me.button1.Location = New System.Drawing.Point(72, 96)
 			Me.button1.Name = "button1"
 			Me.button1.Size = New System.Drawing.Size(145, 61)
 			Me.button1.TabIndex = 0
 			Me.button1.Text = "Export to PDF"
 			Me.button1.UseVisualStyleBackColor = True
-'			Me.button1.Click += New System.EventHandler(Me.button1_Click);
-			' 
+			'
+			' svgImageCollection1
+			'
+			Me.svgImageCollection1.Add("approved", "image://svgimages/icon builder/security_security.svg")
+			'
 			' Form1
-			' 
+			'
 			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
 			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 			Me.ClientSize = New System.Drawing.Size(284, 262)
 			Me.Controls.Add(Me.button1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
+			CType(Me.svgImageCollection1, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
@@ -53,6 +60,7 @@ Namespace pdf_signature_sample
 		#End Region
 
 		Private WithEvents button1 As System.Windows.Forms.Button
+		Private svgImageCollection1 As DevExpress.Utils.SvgImageCollection
 	End Class
 End Namespace
 

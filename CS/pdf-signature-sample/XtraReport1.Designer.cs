@@ -102,7 +102,7 @@
             this.DataMember = "Products";
             this.DataSource = this.nwindDataSet1;
             this.Margins = new DevExpress.Drawing.DXMargins(100F, 100F, 48.95833F, 15.54165F);
-            this.Version = "24.2";
+            this.Version = "26.1";
             xrWatermark1.Id = "Watermark1";
             this.Watermarks.AddRange(new DevExpress.XtraPrinting.Drawing.Watermark[] {
             xrWatermark1});

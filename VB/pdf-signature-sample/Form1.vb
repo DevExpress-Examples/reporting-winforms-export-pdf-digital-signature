@@ -3,6 +3,7 @@
 Imports System
 Imports System.Security.Cryptography.X509Certificates
 Imports System.Windows.Forms
+Imports DevExpress.XtraPrinting.Drawing
 ' ...
 #End Region ' #usings
 
@@ -27,17 +28,15 @@ Namespace pdf_signature_sample
 			' Initialize a certificate collection and adjust its work.
 			Dim collection As X509Certificate2Collection = CType(store.Certificates, X509Certificate2Collection)
 			Dim fcollection As X509Certificate2Collection = CType(collection.Find(X509FindType.FindByTimeValid, DateTime.Now, True), X509Certificate2Collection)
-			Dim scollection As X509Certificate2Collection = X509Certificate2UI.SelectFromCollection(fcollection, "Test Certificate Select", "Select a certificate from the following list to get information on that certificate", X509SelectionFlag.SingleSelection)
+			Dim scollection As X509Certificate2Collection = X509Certificate2UI.SelectFromCollection(fcollection, "Select a Certificate", "Select a certificate to view its details.", X509SelectionFlag.SingleSelection)
 			If scollection.Count > 0 Then
 				certificate = scollection(0)
 			End If
 
-			' Define the remaining PDF signature options.
-			report.ExportOptions.Pdf.SignatureOptions.ContactInfo = "contact info"
-			report.ExportOptions.Pdf.SignatureOptions.Location = "location"
-			report.ExportOptions.Pdf.SignatureOptions.Reason = "reason"
-
-			' Assign the created certificate to the signature options of the PDF export options.
+			' Specify PDF signature options.
+			report.ExportOptions.Pdf.SignatureOptions.Reason = "Approved"
+			report.ExportOptions.Pdf.SignatureOptions.Location = "USA"
+			report.ExportOptions.Pdf.SignatureOptions.ImageSource = New ImageSource(svgImageCollection1("approved"))
 			report.ExportOptions.Pdf.SignatureOptions.Certificate = certificate
 
 			' Export the report to a PDF file
